@@ -1,0 +1,296 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+img {
+  width: 100px;
+  float: right;
+}
+
+section {
+  padding: 20px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+.heading {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.profile-image {
+  border-radius: 50%;
+}
+
+.contact-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+
+}
+
+.contact-item {
+  margin-bottom: 10px;
+}
+
+.summary {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.experience-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.experience-item {
+  margin-bottom: 20px;
+}
+
+.job-title {
+  font-size: 18px;
+}
+
+.company-name {
+  font-size: 16px;
+}
+
+.dates-employed {
+  font-size: 14px;
+}
+
+.summary-of-responsibilities {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.skills-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.skills-item {
+  margin-bottom: 10px;
+}
+
+.card {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    background-color: rgb(238, 238, 238);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 25px 25px;
+    gap: 20px;
+    -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
+  }
+  
+  /* for all social containers*/
+  .socialContainer {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background-color: rgb(44, 44, 44);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    overflow: hidden;
+    -webkit-transition-duration: .3s;
+            transition-duration: .3s;
+  }
+  /* instagram*/
+  .containerOne:hover {
+    background-color: #d62976;
+    -webkit-transition-duration: .3s;
+            transition-duration: .3s;
+  }
+  /* twitter*/
+  .containerTwo:hover {
+    background-color: #00acee;
+    -webkit-transition-duration: .3s;
+            transition-duration: .3s;
+  }
+  /* linkdin*/
+  .containerThree:hover {
+    background-color: #0072b1;
+    -webkit-transition-duration: .3s;
+            transition-duration: .3s;
+  }
+  /* Whatsapp*/
+  .containerFour:hover {
+    background-color: #128C7E;
+    -webkit-transition-duration: .3s;
+            transition-duration: .3s;
+  }
+  
+  .socialContainer:active {
+    -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+            transform: scale(0.9);
+    -webkit-transition-duration: .3s;
+            transition-duration: .3s;
+  }
+  
+  .socialSvg {
+    width: 17px;
+  }
+  
+  .socialSvg path {
+    fill: rgb(255, 255, 255);
+  }
+  
+  .socialContainer:hover .socialSvg {
+    -webkit-animation: slide-in-top 0.3s both;
+            animation: slide-in-top 0.3s both;
+  }
+  
+  @-webkit-keyframes slide-in-top {
+    0% {
+      -webkit-transform: translateY(-50px);
+              transform: translateY(-50px);
+      opacity: 0;
+    }
+  
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slide-in-top {
+    0% {
+      -webkit-transform: translateY(-50px);
+              transform: translateY(-50px);
+      opacity: 0;
+    }
+  
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  
+  .btn-class-name {
+    --primary: 255, 90, 120;
+    --secondary: 150, 50, 60;
+    width: 100px;
+    height: 100px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    -ms-touch-action: manipulation;
+        touch-action: manipulation;
+    background-color: rgb(var(--primary), .2);
+    border: 5px solid rgb(var(--primary), 0);
+    outline: 5px solid rgb(var(--primary), .2);
+    border-radius: 100%;
+    position: relative;
+    -webkit-transition: .3s;
+    transition: .3s;
+  }
+  
+  .btn-class-name .back {
+    background: rgb(var(--secondary));
+    border-radius: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .btn-class-name .front {
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(10%, rgba(var(--primary), .5)), color-stop(50%, rgb(var(--primary))));
+    background: linear-gradient(0deg, rgba(var(--primary), .5) 10%, rgb(var(--primary)) 50%);
+    -webkit-box-shadow: 0 1em .5em -0.1em rgba(var(--secondary), .5);
+            box-shadow: 0 1em .5em -0.1em rgba(var(--secondary), .5);
+    border-radius: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: inherit;
+    -webkit-transform: translateY(-10%);
+        -ms-transform: translateY(-10%);
+            transform: translateY(-10%);
+    -webkit-transition: .2s;
+    transition: .2s;
+    outline: 10px solid var(--secondary);
+    color: white;
+  }
+  
+  .btn-class-name:hover {
+    -webkit-transition: .2s;
+    transition: .2s;
+  }
+  
+  .btn-class-name:active .front {
+    -webkit-transform: translateY(0%);
+        -ms-transform: translateY(0%);
+            transform: translateY(0%);
+    -webkit-box-shadow: 0 -1em .5em -0.1em rgba(var(--secondary), 0);
+            box-shadow: 0 -1em .5em -0.1em rgba(var(--secondary), 0);
+  }
+  
+  
+  
